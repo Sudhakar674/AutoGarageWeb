@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|d:\\sudhakar sharma\\repository\\autogarageweb\\autogarageweb\\views\\master\\carlistmaster.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|solutionrelative:autogarageweb\\views\\master\\carlistmaster.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\autogarageweb\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|solutionrelative:autogarageweb\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\autogarageweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|solutionrelative:autogarageweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|d:\\sudhakar sharma\\repository\\autogarageweb\\autogarageweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|solutionrelative:autogarageweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\autogarageweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|solutionrelative:autogarageweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|d:\\sudhakar sharma\\repository\\autogarageweb\\autogarageweb\\views\\home\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|solutionrelative:autogarageweb\\views\\home\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\autogarageweb\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|solutionrelative:autogarageweb\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\autogarageweb\\models\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAA7750F-6F13-4335-BCCF-508F0108387A}|AutoGarageWeb\\AutoGarageWeb.csproj|solutionrelative:autogarageweb\\models\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarListMaster.cshtml",
+              "DocumentMoniker": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Master\\CarListMaster.cshtml",
+              "RelativeDocumentMoniker": "AutoGarageWeb\\Views\\Master\\CarListMaster.cshtml",
+              "ToolTip": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Master\\CarListMaster.cshtml",
+              "RelativeToolTip": "AutoGarageWeb\\Views\\Master\\CarListMaster.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T10:32:14.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Home\\List.cshtml",
+              "RelativeDocumentMoniker": "AutoGarageWeb\\Views\\Home\\List.cshtml",
+              "ToolTip": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Home\\List.cshtml",
+              "RelativeToolTip": "AutoGarageWeb\\Views\\Home\\List.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T06:04:25.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Home\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "AutoGarageWeb\\Views\\Home\\Dashboard.cshtml",
+              "ToolTip": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Home\\Dashboard.cshtml",
+              "RelativeToolTip": "AutoGarageWeb\\Views\\Home\\Dashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T11:27:44.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AutoGarageWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AutoGarageWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-16T08:02:19.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AutoGarageWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AutoGarageWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-16T07:38:12.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Models\\Connection.cs",
+              "RelativeDocumentMoniker": "AutoGarageWeb\\Models\\Connection.cs",
+              "ToolTip": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Models\\Connection.cs",
+              "RelativeToolTip": "AutoGarageWeb\\Models\\Connection.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T12:28:47.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MasterController.cs",
+              "DocumentMoniker": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Controllers\\MasterController.cs",
+              "RelativeDocumentMoniker": "AutoGarageWeb\\Controllers\\MasterController.cs",
+              "ToolTip": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Controllers\\MasterController.cs",
+              "RelativeToolTip": "AutoGarageWeb\\Controllers\\MasterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T12:04:30.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AutoGarageWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Sudhakar Sharma\\repository\\AutoGarageWeb\\AutoGarageWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AutoGarageWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T12:03:53.201Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
