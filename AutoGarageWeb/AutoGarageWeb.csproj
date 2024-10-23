@@ -3616,6 +3616,7 @@
     <Content Include="assets\vendors\validator\validator.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="MyApp\CarMaster.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -3623,10 +3624,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MasterController.cs" />
+    <Compile Include="Controllers\OnActionAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Common.cs" />
     <Compile Include="Models\Connection.cs" />
+    <Compile Include="Models\Crypto.cs" />
     <Compile Include="Models\Master.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -4495,7 +4499,28 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Dashboard.cshtml" />
     <Content Include="Views\Home\List.cshtml" />
+    <Content Include="Views\Master\CarMaster.cshtml" />
     <Content Include="Views\Master\CarListMaster.cshtml" />
+    <Content Include="Views\Master\BrakingAndSafetyMaster.cshtml" />
+    <Content Include="Views\Master\BrakingAndSafetyListMaster.cshtml" />
+    <Content Include="Views\Master\CarOptionMaster.cshtml" />
+    <Content Include="Views\Master\CarOptionListMaster.cshtml" />
+    <Content Include="Views\Master\ChassisConditionMaster.cshtml" />
+    <Content Include="Views\Master\ChassisConditionListMaster.cshtml" />
+    <Content Include="Views\Master\CountryMaster.cshtml" />
+    <Content Include="Views\Master\CountryListMaster.cshtml" />
+    <Content Include="Views\Master\ElectricalSystemsMaster.cshtml" />
+    <Content Include="Views\Master\ElectricalSystemsListMaster.cshtml" />
+    <Content Include="Views\Master\ExteriorMaster.cshtml" />
+    <Content Include="Views\Master\ExteriorListMaster.cshtml" />
+    <Content Include="Views\Master\HistoryAndRecordMaster.cshtml" />
+    <Content Include="Views\Master\HistoryAndRecordListMaster.cshtml" />
+    <Content Include="Views\Master\InspectionMaster.cshtml" />
+    <Content Include="Views\Master\InspectionListMaster.cshtml" />
+    <Content Include="Views\Master\PowerTrainMaster.cshtml" />
+    <Content Include="Views\Master\PowerTrainListMaster.cshtml" />
+    <Content Include="Views\Master\ProductionYearMaster.cshtml" />
+    <Content Include="Views\Master\ProductionYearListMaster.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
