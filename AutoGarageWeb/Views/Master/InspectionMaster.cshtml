@@ -1,0 +1,87 @@
+﻿@model AutoGarageWeb.Models.Master
+
+@{
+    ViewBag.Title = "InspectionMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("InspectionMaster", "Master", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <!-- page content -->
+    <div class="right_col" role="main">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-5"><h2>Inspection Master</h2></div>
+                            <div class="col-md-5 col-sm-5 col-xs-5"><span style="color:red;"><b>@TempData["Message"]</b></span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2"><a href="/Master/InspectionListMaster" class="btn btn-info">Back To List</a></div>
+                        </div>
+                        <ul class="nav navbar-right panel_toolbox"></ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                @Html.HiddenFor(m => m.Id)
+                                <label>Inspection<span style="color:red"> *</span></label>
+                                @Html.TextBoxFor(m => m.InspectionName, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                @if (Model.Id == null || Model.Id == "")
+                                {
+                                    <input type="submit" id="btnsave" name="btnsave" class="btn btn-success" value="Save" onclick="return validation();" />
+                                   
+                                }
+                                else
+                                {
+                                    <input type="submit" id="btnupdate" name="btnupdate" class="btn btn-success" value="Update" onclick="return validation();" />
+                                    
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /page content -->
+}
+<!-- jQuery -->
+<script src="~/assets/vendors/jquery/dist/jquery.min.js"></script>
+<script>
+    function validation() {
+        debugger;
+        if ($("#InspectionName").val() == "") {
+            $("#InspectionName").addClass('errormessage');
+            $("#InspectionName").focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+<style>
+    .errormessage {
+        border: 1px solid red;
+        background-color: #f5bebe !important;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
