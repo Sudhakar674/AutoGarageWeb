@@ -28,7 +28,12 @@ namespace AutoGarageWeb.Models
         public string InspectionName { get; set; }
         public string PowerTrain { get; set; }
         public string ProductionYear { get; set; }
+        public string RoadTest { get; set; }
+        public string SteeringSystem { get; set; }
+        public string AcAndEngineCooling { get; set; }
+
         
+
         public List<Master> lst { get; set; }
         public List<Master> Countrylst { get; set; }
         public List<Master> CarMasterlst { get; set; }
@@ -486,6 +491,138 @@ namespace AutoGarageWeb.Models
                 new SqlParameter("@Id",Id)
             };
             DataSet ds = Connection.ExecuteQuery("DeleteProductionYearMaster", para);
+            return ds;
+        }
+
+        public DataSet SaveRoadTestMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@RoadTest",RoadTest),
+                 new SqlParameter("@CreatedBy",CreatedBy)
+            };
+            DataSet ds = Connection.ExecuteQuery("SaveRoadTestMaster", para);
+            return ds;
+        }
+
+        public DataSet GetRoadTestListMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@Id",Id),
+                new SqlParameter("@RoadTest",RoadTest),
+            };
+            DataSet ds = Connection.ExecuteQuery("GetRoadTestListMaster", para);
+            return ds;
+        }
+
+        public DataSet UpdateRoadTestMaster()
+        {
+            SqlParameter[] para =
+            {
+                 new SqlParameter("@Id",Id),
+                new SqlParameter("@RoadTest",RoadTest)
+            };
+            DataSet ds = Connection.ExecuteQuery("UpdateRoadTestMaster", para);
+            return ds;
+        }
+
+        public DataSet DeleteRoadTestMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@Id",Id)
+            };
+            DataSet ds = Connection.ExecuteQuery("DeleteRoadTestMaster", para);
+            return ds;
+        }
+
+        public DataSet SaveSteeringSystemMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@SteeringSystem",SteeringSystem),
+                 new SqlParameter("@CreatedBy",CreatedBy)
+            };
+            DataSet ds = Connection.ExecuteQuery("SaveSteeringSystemMaster", para);
+            return ds;
+        }
+
+        public DataSet GetSteeringSystemListMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@Id",Id),
+                new SqlParameter("@SteeringSystem",SteeringSystem),
+            };
+            DataSet ds = Connection.ExecuteQuery("GetSteeringSystemListMaster", para);
+            return ds;
+        }
+
+
+        public DataSet UpdateSteeringSystemMaster()
+        {
+            SqlParameter[] para =
+            {
+                 new SqlParameter("@Id",Id),
+                new SqlParameter("@SteeringSystem",SteeringSystem)
+            };
+            DataSet ds = Connection.ExecuteQuery("UpdateSteeringSystemMaster", para);
+            return ds;
+        }
+
+
+        public DataSet DeleteSteeringSystemMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@Id",Id)
+            };
+            DataSet ds = Connection.ExecuteQuery("DeleteSteeringSystemMaster", para);
+            return ds;
+        }
+
+        public DataSet SaveAcAndEngineCoolingMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@AcAndEngineCooling",AcAndEngineCooling),
+                 new SqlParameter("@CreatedBy",CreatedBy)
+            };
+            DataSet ds = Connection.ExecuteQuery("SaveAcAndEngineCoolingMaster", para);
+            return ds;
+        }
+
+
+        public DataSet GetAcAndEngineCoolingListMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@Id",Id),
+                new SqlParameter("@AcAndEngineCooling",AcAndEngineCooling),
+            };
+            DataSet ds = Connection.ExecuteQuery("GetAcAndEngineCoolingListMaster", para);
+            return ds;
+        }
+
+        public DataSet UpdateAcAndEngineCoolingMaster()
+        {
+            SqlParameter[] para =
+            {
+                 new SqlParameter("@Id",Id),
+                new SqlParameter("@AcAndEngineCooling",AcAndEngineCooling)
+            };
+            DataSet ds = Connection.ExecuteQuery("UpdateAcAndEngineCoolingMaster", para);
+            return ds;
+        }
+
+        public DataSet DeleteAcAndEngineCoolingMaster()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@Id",Id)
+            };
+            DataSet ds = Connection.ExecuteQuery("DeleteAcAndEngineCoolingMaster", para);
             return ds;
         }
 

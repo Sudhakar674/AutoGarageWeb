@@ -1737,9 +1737,477 @@ namespace AutoGarageWeb.Controllers
             return RedirectToAction("ProductionYearListMaster", "Master");
         }
 
+        public ActionResult RoadTestMaster(Master model, string Id)
+        {
+            if (Id != null)
+            {
+                model.Id = Crypto.Decrypt(Id);
+                DataSet ds = model.GetRoadTestListMaster();
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    model.RoadTest = ds.Tables[0].Rows[0]["RoadTest"].ToString();
+                }
+            }
+            return View(model);
+        }
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("RoadTestMaster")]
+        [OnAction(ButtonName = "btnsave")]
+        public ActionResult RoadTestMaster(Master model)
+        {
+            try
+            {
+                model.CreatedBy = "1";
+                DataSet ds = model.SaveRoadTestMaster();
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                    {
+                        TempData["Message"] = "Record Saved Successfully !!.";
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+                else
+                {
+                    TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("RoadTestMaster", "Master");
+        }
+
+        public ActionResult RoadTestListMaster()
+        {
+            Master model = new Master();
+            List<Master> lst = new List<Master>();
+            DataSet ds = model.GetRoadTestListMaster();
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    Master obj = new Master();
+                    obj.Idencrypt = Crypto.Encrypt(dr["Id"].ToString());
+                    obj.Id = dr["Id"].ToString();
+                    obj.RoadTest = dr["RoadTest"].ToString();
+                    lst.Add(obj);
+                }
+                model.lst = lst;
+            }
+            return View(model);
+        }
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("RoadTestListMaster")]
+        [OnAction(ButtonName = "btnsearch")]
+        public ActionResult RoadTestListMaster(Master model)
+        {
+           
+            List<Master> lst = new List<Master>();
+            DataSet ds = model.GetRoadTestListMaster();
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    Master obj = new Master();
+                    obj.Idencrypt = Crypto.Encrypt(dr["Id"].ToString());
+                    obj.Id = dr["Id"].ToString();
+                    obj.RoadTest = dr["RoadTest"].ToString();
+                    lst.Add(obj);
+                }
+                model.lst = lst;
+            }
+            return View(model);
+        }
 
 
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("RoadTestMaster")]
+        [OnAction(ButtonName = "btnupdate")]
+        public ActionResult RoadTestMaster(Master model, string Id, string com)
+        {
+            try
+            {
+                if (Id != null)
+                {
+                    model.Id = Crypto.Decrypt(Id);
+                    DataSet ds = model.UpdateRoadTestMaster();
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                    {
+                        if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                        {
+                            TempData["Message"] = "Record Updated Successfully !!.";
+                        }
+                        else
+                        {
+                            TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        }
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("RoadTestMaster", "Master");
+        }
 
+
+        public ActionResult DeleteRoadTestMaster(Master model, string Id)
+        {
+            try
+            {
+                if (Id != null)
+                {
+                    model.Id = Crypto.Decrypt(Id);
+                    DataSet ds = model.DeleteRoadTestMaster();
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                    {
+                        if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                        {
+                            TempData["Message"] = "Record Deleted Successfully !!.";
+                        }
+                        else
+                        {
+                            TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        }
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("RoadTestListMaster", "Master");
+        }
+
+        public ActionResult SteeringSystemMaster(Master model, string Id)
+        {
+            if (Id != null)
+            {
+                model.Id = Crypto.Decrypt(Id);
+                DataSet ds = model.GetSteeringSystemListMaster();
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    model.SteeringSystem = ds.Tables[0].Rows[0]["SteeringSystem"].ToString();
+                }
+            }
+            return View(model);
+        }
+
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("SteeringSystemMaster")]
+        [OnAction(ButtonName = "btnsave")]
+        public ActionResult SteeringSystemMaster(Master model)
+        {
+            try
+            {
+                model.CreatedBy = "1";
+                DataSet ds = model.SaveSteeringSystemMaster();
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                    {
+                        TempData["Message"] = "Record Saved Successfully !!.";
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+                else
+                {
+                    TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("SteeringSystemMaster", "Master");
+        }
+
+        public ActionResult SteeringSystemListMaster()
+        {
+            Master model = new Master();
+            List<Master> lst = new List<Master>();
+            DataSet ds = model.GetSteeringSystemListMaster();
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    Master obj = new Master();
+                    obj.Idencrypt = Crypto.Encrypt(dr["Id"].ToString());
+                    obj.Id = dr["Id"].ToString();
+                    obj.SteeringSystem = dr["SteeringSystem"].ToString();
+                    lst.Add(obj);
+                }
+                model.lst = lst;
+            }
+            return View(model);
+        }
+
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("SteeringSystemListMaster")]
+        [OnAction(ButtonName = "btnsearch")]
+        public ActionResult SteeringSystemListMaster(Master model)
+        {
+            
+            List<Master> lst = new List<Master>();
+            DataSet ds = model.GetSteeringSystemListMaster();
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    Master obj = new Master();
+                    obj.Idencrypt = Crypto.Encrypt(dr["Id"].ToString());
+                    obj.Id = dr["Id"].ToString();
+                    obj.SteeringSystem = dr["SteeringSystem"].ToString();
+                    lst.Add(obj);
+                }
+                model.lst = lst;
+            }
+            return View(model);
+        }
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("SteeringSystemMaster")]
+        [OnAction(ButtonName = "btnupdate")]
+        public ActionResult SteeringSystemMaster(Master model, string Id, string com)
+        {
+            try
+            {
+                if (Id != null)
+                {
+                    model.Id = Crypto.Decrypt(Id);
+                    DataSet ds = model.UpdateSteeringSystemMaster();
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                    {
+                        if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                        {
+                            TempData["Message"] = "Record Updated Successfully !!.";
+                        }
+                        else
+                        {
+                            TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        }
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("SteeringSystemMaster", "Master");
+        }
+
+        public ActionResult DeleteSteeringSystemMaster(Master model, string Id)
+        {
+            try
+            {
+                if (Id != null)
+                {
+                    model.Id = Crypto.Decrypt(Id);
+                    DataSet ds = model.DeleteSteeringSystemMaster();
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                    {
+                        if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                        {
+                            TempData["Message"] = "Record Deleted Successfully !!.";
+                        }
+                        else
+                        {
+                            TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        }
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("SteeringSystemListMaster", "Master");
+        }
+
+        public ActionResult AcAndEngineCoolingMaster(Master model, string Id)
+        {
+            if (Id != null)
+            {
+                model.Id = Crypto.Decrypt(Id);
+                DataSet ds = model.GetAcAndEngineCoolingListMaster();
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    model.AcAndEngineCooling = ds.Tables[0].Rows[0]["AcAndEngineCooling"].ToString();
+                }
+            }
+            return View(model);
+        }
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("AcAndEngineCoolingMaster")]
+        [OnAction(ButtonName = "btnsave")]
+        public ActionResult AcAndEngineCoolingMaster(Master model)
+        {
+            try
+            {
+                model.CreatedBy = "1";
+                DataSet ds = model.SaveAcAndEngineCoolingMaster();
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                    {
+                        TempData["Message"] = "Record Saved Successfully !!.";
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+                else
+                {
+                    TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("AcAndEngineCoolingMaster", "Master");
+        }
+
+
+        public ActionResult AcAndEngineCoolingListMaster()
+        {
+            Master model = new Master();
+            List<Master> lst = new List<Master>();
+            DataSet ds = model.GetAcAndEngineCoolingListMaster();
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    Master obj = new Master();
+                    obj.Idencrypt = Crypto.Encrypt(dr["Id"].ToString());
+                    obj.Id = dr["Id"].ToString();
+                    obj.AcAndEngineCooling = dr["AcAndEngineCooling"].ToString();
+                    lst.Add(obj);
+                }
+                model.lst = lst;
+            }
+            return View(model);
+        }
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("AcAndEngineCoolingListMaster")]
+        [OnAction(ButtonName = "btnsearch")]
+        public ActionResult AcAndEngineCoolingListMaster(Master model)
+        {           
+            List<Master> lst = new List<Master>();
+            DataSet ds = model.GetAcAndEngineCoolingListMaster();
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    Master obj = new Master();
+                    obj.Idencrypt = Crypto.Encrypt(dr["Id"].ToString());
+                    obj.Id = dr["Id"].ToString();
+                    obj.AcAndEngineCooling = dr["AcAndEngineCooling"].ToString();
+                    lst.Add(obj);
+                }
+                model.lst = lst;
+            }
+            return View(model);
+        }
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("AcAndEngineCoolingMaster")]
+        [OnAction(ButtonName = "btnupdate")]
+        public ActionResult AcAndEngineCoolingMaster(Master model, string Id, string com)
+        {
+            try
+            {
+                if (Id != null)
+                {
+                    model.Id = Crypto.Decrypt(Id);
+                    DataSet ds = model.UpdateAcAndEngineCoolingMaster();
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                    {
+                        if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                        {
+                            TempData["Message"] = "Record Updated Successfully !!.";
+                        }
+                        else
+                        {
+                            TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        }
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("AcAndEngineCoolingMaster", "Master");
+        }
+
+
+        public ActionResult DeleteAcAndEngineCoolingMaster(Master model, string Id)
+        {
+            try
+            {
+                if (Id != null)
+                {
+                    model.Id = Crypto.Decrypt(Id);
+                    DataSet ds = model.DeleteAcAndEngineCoolingMaster();
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                    {
+                        if (ds.Tables[0].Rows[0]["MSG"].ToString() == "1")
+                        {
+                            TempData["Message"] = "Record Deleted Successfully !!.";
+                        }
+                        else
+                        {
+                            TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        }
+                    }
+                    else
+                    {
+                        TempData["Message"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = ex.Message;
+            }
+            return RedirectToAction("AcAndEngineCoolingListMaster", "Master");
+        }
 
 
 

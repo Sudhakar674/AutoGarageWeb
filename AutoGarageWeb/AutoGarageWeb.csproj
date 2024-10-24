@@ -3628,9 +3628,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Common.cs" />
     <Compile Include="Models\Connection.cs" />
     <Compile Include="Models\Crypto.cs" />
+    <Compile Include="Models\Home.cs" />
     <Compile Include="Models\Master.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -4496,9 +4496,7 @@
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Dashboard.cshtml" />
-    <Content Include="Views\Home\List.cshtml" />
     <Content Include="Views\Master\CarMaster.cshtml" />
     <Content Include="Views\Master\CarListMaster.cshtml" />
     <Content Include="Views\Master\BrakingAndSafetyMaster.cshtml" />
@@ -4521,6 +4519,12 @@
     <Content Include="Views\Master\PowerTrainListMaster.cshtml" />
     <Content Include="Views\Master\ProductionYearMaster.cshtml" />
     <Content Include="Views\Master\ProductionYearListMaster.cshtml" />
+    <Content Include="Views\Master\RoadTestMaster.cshtml" />
+    <Content Include="Views\Master\RoadTestListMaster.cshtml" />
+    <Content Include="Views\Master\SteeringSystemMaster.cshtml" />
+    <Content Include="Views\Master\SteeringSystemListMaster.cshtml" />
+    <Content Include="Views\Master\AcAndEngineCoolingMaster.cshtml" />
+    <Content Include="Views\Master\AcAndEngineCoolingListMaster.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
