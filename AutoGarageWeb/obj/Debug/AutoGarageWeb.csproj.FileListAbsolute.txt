@@ -1,3 +1,4 @@
+D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\AutoGarageWeb.dll.config
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\AutoGarageWeb.dll
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\AutoGarageWeb.pdb
@@ -8,7 +9,6 @@ D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\csi.exe
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\csi.exe.config
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\csi.rsp
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\Sudhakar Sharma\repository\AutoGarageWeb\AutoGarageWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll

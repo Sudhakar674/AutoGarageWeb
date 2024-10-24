@@ -1,4 +1,5 @@
-﻿
+﻿@model AutoGarageWeb.Models.Home
+
 @{
     ViewBag.Title = "Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,7 +7,7 @@
 
 
 
-@using (Html.BeginForm("Dashboard", "Home", FormMethod.Post, new { enctype = "multipart/form-data"}))
+@using (Html.BeginForm("Dashboard", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <!-- page content -->
     <div class="right_col" role="main">
@@ -25,31 +26,133 @@
                     <div class="x_content">
                         <div class="row top_tiles">
                             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                <div class="tile-stats"  style="background-color: #1b2855">
-                                    <div class="icon"><i class="fa fa-user aero"></i></div>
-                                    <div class="count">1</div>
-                                    <h3>Total</h3>
+                                <div class="tile-stats" style="background-color: #2a3f54">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalBrakingAndSafety</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size:15px;color:#ffffff;font-family:'Arial Rounded MT'">Total Braking & Safety</span>
+                                    </center>
                                 </div>
                             </div>
                             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="tile-stats" style="background-color: #1abb9c">
-                                    <div class="icon"><i class="fa fa-user aero"></i></div>
-                                    <div class="count">2</div>
-                                    <h3>Active</h3>
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalCarOption</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px;color:#ffffff;font-family: 'Arial Rounded MT'">Total Car Option</span>
+                                    </center>
                                 </div>
                             </div>
                             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                <div class="tile-stats"  style="background-color: #2a3f54">
-                                    <div class="icon"><i class="fa fa-user aero"></i></div>
-                                    <div class="count">3</div>
-                                    <h3>InActive</h3>
+                                <div class="tile-stats" style="background-color: #ededed">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalChassisCondition</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #2a3f54; font-family: 'Arial Rounded MT' ">Total Chassis Condition</span>
+                                    </center>
                                 </div>
                             </div>
                             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                <div class="tile-stats"  style="background-color: #e43d30">
-                                    <div class="icon"><i class="fa fa-user aero"></i></div>
-                                    <div class="count">4</div>
-                                    <h3>Block</h3>
+                                <div class="tile-stats" style="background-color: #ffbc00">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalCountry</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #ffffff; font-family: 'Arial Rounded MT'">Total Country</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats" style="background-color: #ffbc00">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalElectricalSystems</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #ffffff; font-family: 'Arial Rounded MT'">Total Electrical Systems</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats" style="background-color: #ededed">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalExterior</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #2a3f54; font-family: 'Arial Rounded MT' ">Total Exterior</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats" style="background-color: #1abb9c">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalHistoryAndRecord</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #ffffff; font-family: 'Arial Rounded MT'">Total History & Record</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats" style="background-color: #2a3f54">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalInspection</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #ffffff; font-family: 'Arial Rounded MT'">Total Inspection</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats" style="background-color: #2a3f54">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalPowerTrain</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #ffffff; font-family: 'Arial Rounded MT'">Total Power Train</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats" style="background-color: #1abb9c">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalProductionYear</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #ffffff; font-family: 'Arial Rounded MT'">Total Production Year</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats" style="background-color: #ededed">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalRoadTest</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #2a3f54; font-family: 'Arial Rounded MT' ">Total Road Test</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats" style="background-color: #ffbc00">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalSteeringSystem</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #ffffff; font-family: 'Arial Rounded MT'">Total Steering System</span>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="tile-stats" style="background-color: #1b2855 ">
+                                    @*<div class="icon"><i class="fa fa-user aero"></i></div>*@
+                                    <center>
+                                        <div class="count">@ViewBag.TotalACAndEngineCooling</div>
+                                        @*<h3>TotalBrakingAndSafety</h3>*@
+                                        <span style="font-size: 15px; color: #ffffff; font-family: 'Arial Rounded MT'">Total AC & Engine Cooling</span>
+                                    </center>
                                 </div>
                             </div>
                         </div>
